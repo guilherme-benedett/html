@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!--É IMPORTANTE ADAPTAR O DA IMAGEM DE ACORDO COM O TAMANHO DA TELA DO DISPOSITIVO QUE VAI RECEBER O SITE-->
+    <!--HA DIFERENTES TAMANHOS DE IMAGEM, POR EXEMPLO, A IMAGEM DO SITE EM UM SMARTHPHONE, E A MESMA IMAGEM PARA O SITE EM UMA SMARTV-->
+
+    <!--É MELHOR VOCE DIMINUIR O TAMANHO DA IMAGEM PELO HTML DEPENDENDENDO DO DISPOSITIVO QUE VAI EXIBIR O SITE, ASSIM ELA VAI ALTERAR O SEU ESPACO EM DISCO-->
+    <!--UMA IMAGEM ALTERADA EM CSS NAO DIMINUI O SEU ESPACO EM DISOO, SÓ A REDIMENSIONA-->
+    <!--NUNCA DEIXAR IMAGENS GIGANTESCAS PARA FAZER COM QUE OS SITE FIQUE PESADO-->
+
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/televisao_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/televisao_m.png" type="image/png">
+        <img src="imagens/televisao_g.png" alt="foto de televisao">
+    </picture>
+
+    <!--É POSSIVEL ADAPTAR A MESMA IMAGEM COM TAMANHOS DIFERENTES PARA DIFERENTES TAMANHOS DE TELA-->
+    <!--PARA ISSO É USADA A TAG PICTURE E DENTRO PRECISA TER A TAG IMG COM A MAIOR IMAGEM-->
+    <!--A TAG SOURCE MEDIA TYPES FUNCIONA PARA QUE QUANDO A TELA FOR MENOR QUE 1050PX ELA CARREGUE A IMAGEM M-->
+    <!--CASO A TELA FOR MENOR QUE 750PX ELA CARREGA A IMAGEM P-->
+    <!--SEMPRE COLOCAR POR PRIMEIRO A MENOR IMAGEM ATE A MAIOR-->
+    <!--ACONSELHAVEL JOGAR 50PX A MAIS PARA FICAR MAIS BONITO-->
+    <!--USAR MAX-WIDTH, OU SEJA, MAIOR LARGURA-->
+    <!--SRCSET FUNCIONA COMO O NOME DA IMAGEM-->
+
+
+
+</body>
+</html>

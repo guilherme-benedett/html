@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+        td, th{
+            border: 1px solid #000000;
+        }
+        thead, tfoot{
+            background-color: rgba(127, 255, 212, 0.429);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        
+                Anatomia para tabelas grandes
+                table
+                    thead   
+                        tr, td, th
+                    tbody
+                        tr, td, th
+                    tfoot
+                        tr, td, th
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Ano de nascimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guilherme</td>
+                <td>36</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>Fabiana</td>
+                <td>29</td>
+                <td>1993</td>
+            </tr>
+            <tr>
+                <td>Douglas</td>
+                <td>22</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Antônio</td>
+                <td>70</td>
+                <td>1952</td>   
+            </tr>
+            <tr>
+                <td>Soeli</td>
+                <td>68</td>
+                <td>1954</td>   
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>00000</td>
+                <td>00000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

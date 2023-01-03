@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            height: 400px;
+            width: 900px;
+            text-align: center;         /* Alinhamento horizontal */ 
+            vertical-align: middle;     /* Alinhamento vertical, middle é padrao */ 
+
+        }
+        .linha{
+            background-color: brown;
+
+        }
+        .celula{
+            background-color: chartreuse;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr class="linha">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td class="numero">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="numero">B3</td>
+            <td class="celula">C3</td>
+        </tr>
+    </table>
+
+    <!-- 
+        
+        HIERARQUIA DE TABELAS
+            table = tabela  
+                table row (tr) = linha da tabela
+                table header = cabecalho da tabela
+                table data (td) = conteudo da celula da tabela
+
+                é possivel personalizar de varias maneiras a tabela como no exemplo acima
+                sempre respeitar a hierarquia
+                nao se pode criar site com tabelas, é só para armazenar dados
+    -->
+</body>
+</html>

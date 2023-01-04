@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         table{
             width: 400px;
             border-collapse: collapse;
@@ -13,9 +16,15 @@
         }
         td, th{
             border: 1px solid #000000;
+            padding: 10px;
         }
         thead, tfoot{
             background-color: rgba(127, 255, 212, 0.429);
+        }
+        caption{
+            background-color: #00000072;
+            padding: 10px;
+            border: 2px solid #000000;
         }
     </style>
     <title>Document</title>
@@ -26,6 +35,7 @@
         
                 Anatomia para tabelas grandes
                 table
+                    caption = legenda da tabela
                     thead   
                         tr, td, th
                     tbody
@@ -34,12 +44,25 @@
                         tr, td, th
     -->
     
+    <!-- 
+        th é para usar quando se tem um titulo de algo
+        td é para usar quando se atribui um dado a esse titulo
+        no exemplo abaixo o titulo é nome, idade e ano de nascimento
+        e dado é o guilherme, 36, 1986, etc...
+    -->
+
+     <!-- 
+        scope = rol é para dizer que os dados pertencem a tal coluna que foi atribuida o scope
+    -->
+
+
     <table>
+        <caption>Dados da um individuo</caption>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Ano de nascimento</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Ano de nascimento</th>
             </tr>
         </thead>
         <tbody>
@@ -71,7 +94,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total</td>
+                <td scope="row">Total</td>
                 <td>00000</td>
                 <td>00000</td>
             </tr>

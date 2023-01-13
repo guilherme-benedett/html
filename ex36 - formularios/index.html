@@ -15,9 +15,11 @@
     -->
 
     <h1>Meu primeiro formulario</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form autocomplete="off" action="cadastro.js">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p>S<label for="isobrenome">obrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="enviar"></p>
     </form>
 
@@ -28,6 +30,14 @@
         existem varios tipos de input, procurar conhecer
         o input text abre um campo para preencher com letras
         o input submit cria um botao para enviar os dados
+        o autocomplete off é para, no formulario, nao salvar os dados que foram escritos no formulario
+        o action é para aonde os dados vao ser mandados, no exemplo, é para a linguagem programacao javascript
+        o parametro name da tag input é mais util para o html e php
+        o parametro id é mais util para javascript e para a tag label
+        precisa envelopar o nome e sobre com a tag label
+        o parametro for da tag label precisa ter o mesmo nome do parametro id da tag input, como no exemplo acima
+        sempre usar label
+        serve para criar uma melhor interação entre os elementos
     -->
     
 </body>

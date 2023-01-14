@@ -15,7 +15,7 @@
     -->
 
     <h1>Meu primeiro formulario</h1>
-    <form autocomplete="off" action="cadastro.js">
+    <form autocomplete="off" action="cadastro.js" method="get">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p>S<label for="isobrenome">obrenome: </label>
@@ -34,11 +34,20 @@
         o action é para aonde os dados vao ser mandados, no exemplo, é para a linguagem programacao javascript
         o parametro name da tag input é mais util para o html e php
         o parametro id é mais util para javascript e para a tag label
+        
         precisa envelopar o nome e sobre com a tag label
         o parametro for da tag label precisa ter o mesmo nome do parametro id da tag input, como no exemplo acima
         sempre usar label
         serve para criar uma melhor interação entre os elementos
         neste caso que nao esta sendo usado uma linguagem programação, os dados preenchidos no formulario sao acrescentados na URL do site
+
+        existe o parametro method
+        ele tem opções como get e post
+        o method post é o padrão que vem, eles acrescenta os dados inseridos do formulario na URL, quer dizer que é facil ver eles
+        o method post é mais usado para quando se quer proteger os dados, tipo senha, numero de cartao de credito
+        o method post tambem só armazena ate 3 mil bytes, ou seja, 3 mil caracteres
+        o method post armazena mais de 3 mil bytes
+        para ter uma criptografia mais completa, estudar https para proteger dados
     -->
     
 </body>

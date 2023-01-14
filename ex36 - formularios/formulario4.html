@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.js" autocomplete="on" method="post"></form>
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required placeholder="nome do usuario" autocomplete="username">
+        </div>
+        <div>
+            <label for="imail">Email</label>
+            <input type="email" name="email" id="imail" required autocomplete="email" placeholder="email">
+        </div>
+        <div>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxxx-xxxx" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+        </div>
+    </fieldset>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+
+    <!--
+        esses sao outros modelos de input
+        procurar estudar sobre regEx
+        esta é a configuracao para o input telefone, ja que ele tem dd e 9 numeros
+        fieldset é para criar uma caixa de agrupamento do formulario
+        legal usar o legend tambem
+        isso pode ser tudo personalizado com o css
+    -->
+    
+</body>
+</html>

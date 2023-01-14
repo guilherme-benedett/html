@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <form action="cadastro.js" autocomplete="off" method="post">
+        <div>
+            <label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="15" minlength="5" size="20" autocomplete="username" placeholder="nome do usuario">
+        </div>
+        <div>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required required maxlength="15" minlength="5" size="10" autocomplete="current-password" placeholder="senha">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <!--
+
+        esse é um exemplo mais adequado de formulario
+        usado com div
+        tammbem acrescentei outro tipo de input, o input password, input reset para limpar os dados preenchidos
+        sempre colocar o autocomplete off na tag form
+        o parametro required exige que o campo seja preenchido no formulario
+        o parametro maxlenght e minlenght é para escolher a quantidade maxima e minima de caracteres
+        o size é para escolher quantos caracteres o campo pode ter
+        o autocomplete em cada input é para identificar o tipo de dado que cada campo recebe
+        o parametro placeholder é para aparecer no campo que recebe o dado, o tipo de dado
+
+
+    -->
+</body>
+</html>

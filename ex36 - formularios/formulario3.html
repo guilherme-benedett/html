@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <form action="tipos de formulario.js">
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="Inome" required placeholder="Nome do usuario" minlength="7" maxlength="20">
+        </div>
+        <div>
+            <label for="idata">Data</label>
+            <input type="date" name="data" id="idata">
+        </div>
+        <div>
+            <label for="inumero">Numero</label>
+            <input type="number" name="numero" id="inumero" min="0" max="10" placeholder="0 a 10" required step="0.1">
+        </div>
+        <div>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes">
+        </div>
+        <div>
+            <label for="ihora">Hora</label>
+            <input type="time" name="hora" id="ihora">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>

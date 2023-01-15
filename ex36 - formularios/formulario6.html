@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>formulario</legend>
+        <form action="cadastro.js" method="post" autocomplete="on">
+            <div>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </div>
+            <div>
+                <label for="iarquivo">Arquivo:</label>
+                <input type="file" name="arquivo" id="iarquivo">
+            </div>
+            <div>
+                <label for="iseleção"></label>
+                <input type="range" name="selecão" id="iseleção" min="1" max="10">
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <div>
+            <label for="inumero1">Numero 1:</label>
+            <input type="number" name="numero1" id="inumero1" min="0" max="50" required 
+            oninput="iresultado.innetHTML = Number(inumero1.value) + Number(inumero2.value)">
+        </div>
+        <div>
+            <label for="inumero2">Numero 2:</label>
+            <input type="number" name="numero2" id="inumero2" min="0" max="50" required
+            oninput="iresultado.innetHTML = Number(inumero1.value) + Number(inumero2.value)">
+
+        </div>
+        <div>
+            <label for="iresultado">Resultado:</label>
+            <output name="resultado" id="iresultado">0</output>
+        </div>
+    </form>
+
+    
+</body>
+</html>

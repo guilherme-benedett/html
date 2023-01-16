@@ -16,19 +16,29 @@
         <div>
             <label for="inumero1">Numero 1:</label>
             <input type="number" name="numero1" id="inumero1" min="0" max="50" required 
-            oninput="iresultado.innetHTML = Number(inumero1.value) + Number(inumero2.value)">
+            oninput="iresultado.innerHTML = Number(inumero1.value) + Number(inumero2.value)">
         </div>
         <div>
             <label for="inumero2">Numero 2:</label>
             <input type="number" name="numero2" id="inumero2" min="0" max="50" required
-            oninput="iresultado.innetHTML = Number(inumero1.value) + Number(inumero2.value)">
+            oninput="iresultado.innerHTML = Number(inumero1.value) + Number(inumero2.value)">
 
         </div>
         <div>
             <label for="iresultado">Resultado:</label>
             <output name="resultado" id="iresultado">0</output>
         </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
     </form>
+
+    <!--
+        essa tag output é para calcular algo na tela e mostrar o resultado para o cliente
+        o codido a partir do oninput é linguagem de programação javascript
+        ela serve para calcular a soma entre o numero1 e numero2 e mostrar o resultado na tela
+    -->
 
     
 </body>

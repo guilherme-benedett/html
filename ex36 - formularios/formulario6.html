@@ -25,10 +25,20 @@
             </div>
             <div>
                 <label for="iseleção"></label>
-                <input type="range" name="selecão" id="iseleção" min="1" max="10">
+                <input type="range" name="selecão" id="iseleção" min="1" max="10" value="5"
+                oninput="ival.innerHTML = Number(iseleção.value)">
+                <output id="ival">5</output>
             </div>
         </form>
     </fieldset>
+
+    <!--
+        usei bastante comandos no input range
+        o value = "5" deixa o valor padrao como 5
+        o oninput é linguagem de programacao javascript
+        serve para quando voce correr a barra de selecao no navegador, o numero corra junto
+        testar para ver funcionando
+    -->
     
 </body>
 </html>

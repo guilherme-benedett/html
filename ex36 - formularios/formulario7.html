@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div>
+        <form action="cadastro.js">
+            <div>
+                <label for="inome">Nome do usuario</label>
+                <input type="text" name="nome" id="inome" required placeholder="nome do usuario" autocomplete="username">
+            </div>
+            <div>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região Centro Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goias</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Gerente</option>
+                    <option>Desenvolvedor</option>
+                    <option>Programador</option>
+                    <option>Designer</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    
+    <!--
+        esses mais elementos input para usar
+    -->
+</body>
+</html>
